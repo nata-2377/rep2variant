@@ -16,17 +16,13 @@ using System.Windows.Shapes;
 namespace WpfApp3
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для PageAvtoriz.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageAvtoriz : Page
     {
-        public MainWindow()
+        public PageAvtoriz()
         {
             InitializeComponent();
-            ConnectOdb.ConObj = new Entities();
-            FrameObj.MainFrame = frmMain;
-
-            frmMain.Navigate(new PageAvtoriz());
         }
     }
 }

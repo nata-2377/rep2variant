@@ -4,6 +4,25 @@
              xmlns:local="clr-namespace:WpfApp3"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="130"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Background" Value="#B3F4E9"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+         </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+
+
+
     </Application.Resources>
 </Application>
