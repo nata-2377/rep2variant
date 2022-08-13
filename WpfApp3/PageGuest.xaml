@@ -9,16 +9,23 @@
       Title="PageGuest">
 
     <Grid>
-        <Label Content="Вы зашли как Гость" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="15" Width="181"/>
-        <ScrollViewer>
-        <StackPanel Orientation="Vertical" >
-                <TextBox Name="TxtSearch" Width="700" Height="25" Margin="30" />
-                <ListBox Name="ListProduct" Background="Transparent" Width="650" BorderBrush="Transparent"/>
-            
+                 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"> </RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="0" > 
+          <Label Content="Вы зашли как Гость" VerticalAlignment="Top" HorizontalAlignment="Right" FontSize="15" Width="181"/>
+                           </StackPanel>
+
+      
+        <StackPanel Orientation="Vertical" Grid.Row="1" >
+            <DataGrid x:Name="DGrProduct">
+
+        </DataGrid>
             </StackPanel>
-            
-            
-            
+        
+        <ScrollViewer Grid.Row="1">
         </ScrollViewer>
     </Grid>
 </Page>
