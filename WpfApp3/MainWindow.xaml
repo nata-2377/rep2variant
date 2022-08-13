@@ -18,15 +18,15 @@
             <TextBlock Text="ООО 'ДЕТСКИЙ МИР'" FontSize="25" FontFamily="Candara" Margin="120,0,0,0" VerticalAlignment="Center" >
             </TextBlock>
             <Button x:Name="btnBack" Content="Назад" Background="#B3F4E9" FontFamily="Tahoma" Width="130" 
-                    Height="30" Margin="140,0,0,0" />
+                    Height="30" Margin="140,0,0,0" Click="btnBack_Click" />
         </StackPanel>
         <StackPanel Grid.Row="2" Background="#A5E887" Orientation="Horizontal" Margin="0,0,-0.4,0" >
-            <Button x:Name="btnExit" Content="Выход" Background="#B3F4E9" FontFamily="Tahoma"  Width="130" Height="30" Margin="600,0,0,0" />
+            <Button x:Name="btnExit" Content="Выход" Background="#B3F4E9" FontFamily="Tahoma"  Width="130" Height="30" Margin="600,0,0,0" Click="btnExit_Click" />
         </StackPanel>
         <StackPanel VerticalAlignment="Center" Margin="0,0,-0.4,0"  Grid.Row="1">
             <Image Source=".//Resources/logo.png"
        Opacity="0.2" Width="300"     />
         </StackPanel>
-        <Frame x:Name="frmMain"  Grid.Row="1" NavigationUIVisibility="Hidden" ></Frame>
+        <Frame ContentRendered="MainFrame_ContentRendered" x:Name="frmMain"  Grid.Row="1" NavigationUIVisibility="Hidden" ></Frame>
     </Grid>
 </Window>

@@ -39,7 +39,7 @@
             <Button x:Name="btnPerson" Content="Войти"/>
         </Grid>
         <Grid Grid.Row="3" Grid.Column="2" >
-            <Button x:Name="btnGuest" Content="Войти как гость"/>
+            <Button x:Name="btnGuest" Content="Войти как гость" Click="btnGuest_Click"/>
         </Grid>
 
     </Grid>

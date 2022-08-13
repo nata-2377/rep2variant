@@ -28,5 +28,36 @@ namespace WpfApp3
 
             frmMain.Navigate(new PageAvtoriz());
         }
+     
+      
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            FrameObj.MainFrame.GoBack();
+        }
+
+        private void MainFrame_ContentRendered(object sender, EventArgs e)
+        {
+            if (frmMain.CanGoBack)
+            {
+                btnBack.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btnBack.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Вы действительно хотите закрыть окно?",
+                     "Закрытие приложения",
+                     MessageBoxButton.YesNo,
+                     MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                this.Close();
+            }
+            
+        }
     }
 }

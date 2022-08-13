@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace WpfApp3
 {
     /// <summary>
-    /// Логика взаимодействия для PageAvtoriz.xaml
+    /// Логика взаимодействия для PageAdmin.xaml
     /// </summary>
-    public partial class PageAvtoriz : Page
+    public partial class PageAdmin : Page
     {
-        public PageAvtoriz()
+        public PageAdmin()
         {
             InitializeComponent();
-        }
-
-        private void btnGuest_Click(object sender, RoutedEventArgs e)
-        {
-            FrameObj.MainFrame.Navigate(new PageGuest());
         }
     }
 }
